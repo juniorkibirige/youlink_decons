@@ -62,7 +62,7 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
     }
 }else{
     
-    @$myObj->error = true;
+    $myObj->error = true;
     $myObj->msg = "there is no youtube link";
     
     $myObj->madeBy = "El-zahaby";
