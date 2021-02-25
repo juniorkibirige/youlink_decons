@@ -61,13 +61,14 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
        // var_dump( $g[1]["quality"],true);
     }
 }else{
-    
-    $myObj->error = true;
-    $myObj->msg = "there is no youtube link";
-    
-    $myObj->madeBy = "El-zahaby";
-    $myObj->updatedBy = "Kibirige Junior Lawrence";
-    $myObj->instagram = "egy.js";
+    $myObj = array();
+    $myObj['error'] = true;
+    $myObj['msg'] = "There is no youtube link";
+    $myObj['madeBy'] = "El-zahaby";
+    $myObj['instagram'] = "egy.js";
+    $myObj['updatedBy'] = "Kibirige Junior Lawrence";
+    $myObj['email'] = "aanga26@gmail.com";
+    $myObj['github'] = "https://github.com/juniorkibirige";
     $myJSON = json_encode($myObj);
     echo $myJSON;
 }
