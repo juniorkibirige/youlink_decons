@@ -30,11 +30,11 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
             }
             $g[]=$h;
             $g[0]['error'] = true;
-    $myObj['madeBy'] = "El-zahaby";
-    $myObj['instagram'] = "egy.js";
-    $myObj['updatedBy'] = "Kibirige Junior Lawrence";
-    $myObj['email'] = "aanga26@gmail.com";
-    $myObj['github'] = "https://github.com/juniorkibirige";
+    $g[0]['madeBy'] = "El-zahaby";
+    $g[0]['instagram'] = "egy.js";
+    $g[0]['updatedBy'] = "Kibirige Junior Lawrence";
+    $g[0]['email'] = "aanga26@gmail.com";
+    $g[0]['github'] = "https://github.com/juniorkibirige";
         echo json_encode($g,JSON_PRETTY_PRINT);
         
     }else{
