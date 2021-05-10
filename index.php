@@ -28,16 +28,16 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
                 $n=$c[0]; $v=$c[1];
                 $h[$n]=urldecode($v);
             }
-            $g[]=$h;
-            $g[0]['error'] = true;
-    $g[0]['madeBy'] = "El-zahaby";
-    $g[0]['instagram'] = "egy.js";
-    $g[0]['updatedBy'] = "Kibirige Junior Lawrence";
-    $g[0]['email'] = "aanga26@gmail.com";
-    $g[0]['github'] = "https://github.com/juniorkibirige";
-        echo json_encode($g,JSON_PRETTY_PRINT);
-        
-    }else{
+        echo $h;
+        $g[]=$h;
+        $g[0]['error'] = true;
+        $g[0]['madeBy'] = "El-zahaby";
+        $g[0]['instagram'] = "egy.js";
+        $g[0]['updatedBy'] = "Kibirige Junior Lawrence";
+        $g[0]['email'] = "aanga26@gmail.com";
+        $g[0]['github'] = "https://github.com/juniorkibirige";
+        echo json_encode($g,JSON_PRETTY_PRINT);  
+    } else{
         // $a = json_decode(urldecode(explode("=",explode("&",$dt)[13])[1]))->streamingData->formats;
         // echo json_encode($a);
         $x=explode("&",$dt);
