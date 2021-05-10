@@ -28,8 +28,9 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
                 $n=$c[0]; $v=$c[1];
                 $h[$n]=urldecode($v);
             }
-        echo json_encode($h, JSON_PRETTY_PRINT);
-        $g[]=$h;
+//         echo json_encode($h, JSON_PRETTY_PRINT);
+//         array_push();
+//         $g[]=$h;
         $g[0]['error'] = true;
         $g[0]['madeBy'] = "El-zahaby";
         $g[0]['instagram'] = "egy.js";
