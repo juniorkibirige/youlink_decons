@@ -62,14 +62,15 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
             $g[]=$h;
 //             echo json_encode($g, JSON_PRETTY_PRINT);
         }
-//         echo json_encode($streams);
+        echo json_encode($streams);
+        echo '\n';
         $g[0]['error'] = true;
         $g[0]['madeBy'] = "El-zahaby";
         $g[0]['instagram'] = "egy.js";
         $g[0]['updatedBy'] = "Kibirige Junior Lawrence";
         $g[0]['email'] = "aanga26@gmail.com";
         $g[0]['github'] = "https://github.com/juniorkibirige";
-        echo json_encode($g,JSON_PRETTY_PRINT);  
+        echo json_encode($g);  
        // var_dump( $g[1]["quality"],true);
     }
 }else{
