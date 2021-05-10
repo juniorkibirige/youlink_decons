@@ -49,7 +49,7 @@ if(isset($_GET['url']) && $_GET['url'] != ""){
             $y=urldecode($v);
             $t[$n]=$v;
         }
-        // echo json_encode(json_decode(urldecode($t['player_response']))->streamingData->formats[0]);
+        echo json_encode(json_decode(urldecode($t['player_response']))->streamingData->formats[0]);
         $streams = json_decode(urldecode($t['player_response']))->streamingData->formats;
         // echo json_encode($streams);
         // foreach($streams as $d){ 
